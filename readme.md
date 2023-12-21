@@ -4,10 +4,10 @@ Website sekolah dengan menggunakan framework CodeIgniter ini memiliki tampilan y
 To access admin page, add url /admin. Example http://localhost/man1pati/admin
 
 ## Tampilan Aplikasi
-![ss](asset/ss1.png)
-![ss](asset/ss2.png)
-![ss](asset/ss3.png)
-![ss](asset/ss4.png)
+![ss]()
+![ss]()
+![ss]()
+![ss]()
 
 ## Admin Account
 |    Username    | Password |
