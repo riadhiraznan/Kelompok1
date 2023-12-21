@@ -5,9 +5,6 @@ To access admin page, add url /admin. Example http://localhost/man1pati/admin
 
 ## Tampilan Aplikasi
 ![screencapture-localhost-man1pati-2023-12-21-13_25_37](https://github.com/riadhiraznan/Kelompok1/assets/145758323/5eedb832-9937-4edd-8d7f-28a74b027cca)
-![ss]()
-![ss]()
-![ss]()
 
 ## Admin Account
 |    Username    | Password |
