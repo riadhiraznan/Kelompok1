@@ -17,13 +17,13 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] 			 = 'Admin';
-		$data['page']				 = 'dashboard/index';
+		$data['title'] 	         = 'Admin';
+		$data['page']		 = 'dashboard/index';
 		$data['total_banner'] 	 = $this->banner->totalBanner();
 		$data['total_fasilitas'] = $this->fasilitas->totalFasilitas();
 		$data['total_berita'] 	 = $this->berita->countBerita();
-		// $data['chart'] 			 = $this->admin->areaChart();
-      $data['pageChart'] 		 = '_chart';
+		// $data['chart'] 	 = $this->admin->areaChart();
+                $data['pageChart'] 	 = '_chart';
 
 		$this->load->view('back/layouts/main', $data);
 	}
@@ -32,3 +32,4 @@ class Admin extends CI_Controller {
 }
 
 /* End of file Controllername.php */
+
