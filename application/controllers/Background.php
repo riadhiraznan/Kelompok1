@@ -1,6 +1,5 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Background extends CI_Controller {
 
 	public function __construct()
@@ -19,7 +18,6 @@ class Background extends CI_Controller {
 
 		$this->load->view('back/layouts/main', $data);
 	}
-
 	public function edit($id)
 	{
 		$this->form_validation->set_rules('photo', 'photo', 'trim');
@@ -51,9 +49,10 @@ class Background extends CI_Controller {
 			$this->session->set_flashdata('success', 'Background Jurusan Berhasil Diupdate.');
 
 			redirect(base_url('background'));
-		}
+        	}
 	}
 
 }
 
 /* End of file Controllername.php */
+
