@@ -1,6 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
 class Profil extends CI_Controller {
 	
 	public function __construct()
@@ -34,7 +35,6 @@ class Profil extends CI_Controller {
 
 		$this->load->view('front/layouts/main', $data);
 	}
-
 	public function fasilitas()
 	{
 		$data['title']		= 'Fasilitas';
@@ -43,7 +43,6 @@ class Profil extends CI_Controller {
 
 		$this->load->view('front/layouts/main', $data);
 	}
-
 }
 
-/* End of file Controllername.php */
+
