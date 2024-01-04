@@ -22,10 +22,8 @@ class Home extends CI_Controller {
 		$data['berita']	= $this->berita->getLastNews();
 		$data['jurusan']	= $this->background->getData();
 		$data['page']		= 'home/index';
-
 		$this->load->view('front/layouts/main', $data);
 	}
-
 }
 
-/* End of file Controllername.php */
+
