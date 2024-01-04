@@ -1084,7 +1084,6 @@ class Ion_auth_model extends CI_Model
 		}
 		return 0;
 	}
-
 	/**
 	 * Get the last time a login attempt occurred from given identity
 	 *
@@ -2717,7 +2716,6 @@ class Ion_auth_model extends CI_Model
 
 		return FALSE;
 	}
-
 	/**
 	 * Handle legacy sha1 password
 	 *
