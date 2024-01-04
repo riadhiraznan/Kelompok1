@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Identitas_model extends CI_Model {
 
-	public function getData()
+	public function getData() 
 	{
 		return $this->db->get_where('identity')->row();
 	}
@@ -35,7 +35,6 @@ class Identitas_model extends CI_Model {
      		return false;
 		}
    }
-
 }
 
 /* End of file ModelName.php */
