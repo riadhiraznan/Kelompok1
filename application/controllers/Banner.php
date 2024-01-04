@@ -153,14 +153,12 @@ class Banner extends CI_Controller {
 					redirect(base_url("banner/edit/$id"));
 				}
 			}
-
 			$this->banner->update($id, $data);
 			$this->session->set_flashdata('success', 'Banner Berhasil Diupdate.');
 
 			redirect(base_url('banner'));
 		}
 	}
-
 	public function delete()
 	{
 		$id = $this->input->post('id', true);
@@ -173,7 +171,5 @@ class Banner extends CI_Controller {
 		$this->banner->delete($id);
 		echo json_encode(["status" => TRUE]);
 	}
-
 }
 
-/* End of file Controllername.php */
