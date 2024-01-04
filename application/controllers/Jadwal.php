@@ -10,7 +10,6 @@ class Jadwal extends CI_Controller {
 		$this->load->model('menu_model', 'menu');
 		$this->load->model('jadwal_model', 'jadwal');
 	}
-
 	public function index()
 	{
 		$data['title']		= 'Agenda';
@@ -19,7 +18,6 @@ class Jadwal extends CI_Controller {
 
 		$this->load->view('back/layouts/main', $data);
 	}
-
 	public function edit($id)
 	{
 		$this->form_validation->set_rules('photo', 'photo', 'trim');
@@ -46,14 +44,11 @@ class Jadwal extends CI_Controller {
 					redirect(base_url("jadwal/edit/$id"));
 				 }
 			}
-
 			$this->jadwal->updateData($id, $data);
 			$this->session->set_flashdata('success', 'Agenda Sekolah Berhasil Diupdate.');
 
 			redirect(base_url('jadwal'));
 		}
 	}
-
 }
 
-/* End of file Controllername.php */
