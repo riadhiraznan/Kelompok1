@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
-	
 	public function __construct()
 	{
 		parent::__construct();
@@ -11,7 +10,6 @@ class User extends CI_Controller {
 		$this->load->model('menu_model', 'menu');
 		$this->load->library('ion_auth');
 	}
-
 	public function index()
 	{
 		$data['title']		= 'Manajemen User';
@@ -20,7 +18,6 @@ class User extends CI_Controller {
 
 		$this->load->view('back/layouts/main', $data);
 	}
-
 	public function delete($id)
 	{
 		$this->ion_auth->delete_user($id);
@@ -28,7 +25,6 @@ class User extends CI_Controller {
 		$this->session->set_flashdata('success', 'User Berhasil Dihapus.');
 		$this->index();
 	}
-
 }
 
-/* End of file Controllername.php */
+
