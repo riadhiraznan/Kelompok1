@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'form_validation', 'session');
+$autoload['libraries'] = array('database', 'form_validation', 'session') ;
 
 /*
 | -------------------------------------------------------------------
@@ -79,7 +79,7 @@ $autoload['libraries'] = array('database', 'form_validation', 'session');
 |	$autoload['drivers'] = array('cache' => 'cch');
 |
 */
-$autoload['drivers'] = array();
+$autoload['drivers'] = array() ;
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'form', 'ci_helper', 'text', 'dateindo_helper');
+$autoload['helper'] = array('url', 'form', 'ci_helper', 'text', 'dateindo_helper') ;
 
 /*
 | -------------------------------------------------------------------
@@ -118,7 +118,6 @@ $autoload['config'] = array();
 |
 */
 $autoload['language'] = array();
-
 /*
 | -------------------------------------------------------------------
 |  Auto-load Models
