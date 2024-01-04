@@ -37,7 +37,5 @@ class Blog extends CI_Controller {
 		}
 
 	}
-
 }
 
-/* End of file Controllername.php */
