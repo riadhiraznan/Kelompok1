@@ -26,7 +26,6 @@ class Fasilitas extends CI_Controller {
 		
       $this->load->view('back/layouts/main', $data);
 	}
-
 	public function ajax_list()
    {
       $list = $this->my->get_datatables();
@@ -159,11 +158,7 @@ class Fasilitas extends CI_Controller {
 		if(file_exists('img/fasilitas/' . $fasilitas->photo) && $fasilitas->photo){
 			unlink('img/fasilitas/' . $fasilitas->photo);
 		}
-
 		$this->fasilitas->delete($id);
 		echo json_encode(["status" => TRUE]);
 	}
-
 }
-
-/* End of file Controllername.php */
