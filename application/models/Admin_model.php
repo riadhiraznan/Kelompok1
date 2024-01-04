@@ -21,4 +21,3 @@ class Admin_model extends CI_Model {
 
 }
 
-/* End of file Admin_model.php */
