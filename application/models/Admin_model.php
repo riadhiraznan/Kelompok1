@@ -18,6 +18,5 @@ class Admin_model extends CI_Model {
 //       $result = json_encode($data);
 //       return $result;
 //     }
-
 }
-
+/* End of file Admin_model.php */
