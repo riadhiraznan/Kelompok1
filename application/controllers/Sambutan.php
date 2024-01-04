@@ -26,22 +26,22 @@ class Sambutan extends CI_Controller {
 			['required' => 'Kata sambutan tidak boleh kosong!']
 		);
 
-		if($this->form_validation->run() == false){
+		if($this->form_validation->run()       == false){
 			$data['title']			= 'Ubah Sambutan';
 			$data['page']			= 'sambutan/edit';
 			$data['content']		= $this->sambutan->getData();
-			$data['form_action']	= base_url('sambutan/edit/' . $id);
+			$data['form_action']	        = base_url('sambutan/edit/' . $id);
 			$this->load->view('back/layouts/main', $data);
 		}else{
 			$data = [
-				'content'	=> $this->input->post('content', true),
+				'content'	        => $this->input->post('content', true),
 			];
 
 			if(!empty($_FILES['photo']['name'])){
-				$upload 	 = $this->sambutan->uploadImage();
+				$upload 	         = $this->sambutan->uploadImage();
 
 				if($upload){
-					$sambutan = $this->sambutan->getData();
+					$sambutan        = $this->sambutan->getData();
 
 					if(file_exists('img/sambutan/' . $sambutan->photo) && $sambutan->photo){
 						unlink('img/sambutan/' . $sambutan->photo);
@@ -56,10 +56,9 @@ class Sambutan extends CI_Controller {
 			$this->sambutan->updateData($id, $data);
 			$this->session->set_flashdata('success', 'Sambutan Berhasil Diupdate.');
 
-			redirect(base_url('sambutan'));
+	        	redirect(base_url('sambutan'));
 		}
 	}
-
 }
 
-/* End of file Controllername.php */
+
