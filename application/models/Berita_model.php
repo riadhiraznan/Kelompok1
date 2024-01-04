@@ -10,7 +10,7 @@ class Berita_model extends CI_Model {
 		$this->db->from('posts');
 		$this->db->where('is_active', 'Y');
 		$this->db->order_by('id', 'desc');
-		$this->db->limit(4);
+		$this->db->limit (4) ;
 		return $this->db->get()->result();
 	}
 
@@ -135,11 +135,8 @@ class Berita_model extends CI_Model {
 			'num_tag_open'        => '<li class="page-item">',
 			'num_tag_close'       => '</li>'
       ];
-
       $this->pagination->initialize($config);
       return $this->pagination->create_links();
    }
-
 }
 
-/* End of file ModelName.php */
