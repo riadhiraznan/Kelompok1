@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Struktur extends CI_Controller {
-
 	public function __construct()
 	{
 		parent::__construct();
@@ -10,7 +9,6 @@ class Struktur extends CI_Controller {
 		$this->load->model('menu_model', 'menu');
 		$this->load->model('struktur_model', 'struktur');
 	}
-
 	public function index()
 	{
 		$data['title']		= 'Struktur Organisasi';
@@ -19,7 +17,6 @@ class Struktur extends CI_Controller {
 
 		$this->load->view('back/layouts/main', $data);
 	}
-
 	public function edit($id)
 	{
 		$this->form_validation->set_rules('photo', 'photo', 'trim');
@@ -56,4 +53,3 @@ class Struktur extends CI_Controller {
 
 }
 
-/* End of file Controllername.php */
