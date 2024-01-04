@@ -10,19 +10,18 @@ class Jurusan extends CI_Controller {
 
 	public function ap()
 	{
-		$data['title']		= 'Administrasi Perkantoran';
-		$data['page']		= 'jurusan/ap';
+		$data['title']	= 'Administrasi Perkantoran';
+		$data['page']	= 'jurusan/ap';
 
 		$this->load->view('front/layouts/main', $data);
 	}
-
 	public function ak()
 	{
-		$data['title']		= 'Akutansi';
-		$data['page']		= 'jurusan/ak';
+		$data['title']	= 'Akutansi';
+		$data['page']	= 'jurusan/ak';
 
 		$this->load->view('front/layouts/main', $data);
 	}
 }
 
-/* End of file Controllername.php */
+
