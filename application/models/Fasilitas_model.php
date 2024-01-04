@@ -55,7 +55,6 @@ class Fasilitas_model extends CI_Model {
         'overwrite'       => TRUE,
         'file_ext_tolower'=> TRUE
       ];
-  
       $this->load->library('upload', $config);
 		
 		if($this->upload->do_upload('photo')){
@@ -64,8 +63,6 @@ class Fasilitas_model extends CI_Model {
 			$this->session->set_flashdata('image_error', 'Jenis file yang diupload tidak diizinkan atau file terlalu besar.');
      		return false;
 		}
-   }
+	}
 
 }
-
-/* End of file ModelName.php */
