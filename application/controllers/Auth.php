@@ -178,7 +178,6 @@ class Auth extends CI_Controller
 				'type' => 'hidden',
 				'value' => $user->id,
 			];
-
 			// render
 			$this->_render_page('admin' . DIRECTORY_SEPARATOR . 'index', $this->data);
 		}
@@ -611,8 +610,7 @@ class Auth extends CI_Controller
 		//USAGE NOTE - you can do more complicated queries like this
 		//$groups = $this->ion_auth->where(['field' => 'value'])->groups()->result_array();
 	
-
-		// validate form input
+                // validate form input
 		$this->form_validation->set_rules('first_name', $this->lang->line('edit_user_validation_fname_label'), 'trim|required',
 			['required' => 'Nama depan harus diisi.']
 		);
@@ -627,7 +625,6 @@ class Auth extends CI_Controller
 				'valid_email'	=> 'Email anda tidak valid.'
 			]
 		);
-
 		if (isset($_POST) && !empty($_POST))
 		{
 			// do we have a valid request?
@@ -661,7 +658,6 @@ class Auth extends CI_Controller
 					'phone' => $this->input->post('phone'),
 					'email' => $this->input->post('email'),
 				];
-
 				// update the password if it was posted
 				if ($this->input->post('password'))
 				{
@@ -684,7 +680,6 @@ class Auth extends CI_Controller
 
 					}
 				}
-
 				// check to see if we are updating the user
 				if ($this->ion_auth->update($user->id, $data))
 				{
@@ -703,7 +698,6 @@ class Auth extends CI_Controller
 
 			}
 		}
-
 		// display the edit user form
 		$this->data['csrf'] = $this->_get_csrf_nonce();
 
@@ -917,7 +911,6 @@ class Auth extends CI_Controller
 	 */
 	public function _render_page($view, $data = NULL, $returnhtml = FALSE)//I think this makes more sense
 	{
-
 		$viewdata = (empty($data)) ? $this->data : $data;
 
 		$view_html = $this->load->view($view, $viewdata, $returnhtml);
@@ -928,5 +921,4 @@ class Auth extends CI_Controller
 			return $view_html;
 		}
 	}
-
 }
