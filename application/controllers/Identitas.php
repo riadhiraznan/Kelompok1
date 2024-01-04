@@ -1,6 +1,5 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class Identitas extends CI_Controller {
 
 	public function __construct()
@@ -10,7 +9,6 @@ class Identitas extends CI_Controller {
 		$this->load->model('menu_model', 'menu');
 		$this->load->model('identitas_model', 'identitas');
 	}
-
 	public function index()
 	{
 		$data['title']		= 'Identitas Web';
@@ -19,7 +17,6 @@ class Identitas extends CI_Controller {
 
 		$this->load->view('back/layouts/main', $data);
 	}
-
 	public function edit($id)
 	{
 		$this->form_validation->set_rules('meta_description', 'Deskripsi', 'required',
@@ -51,4 +48,3 @@ class Identitas extends CI_Controller {
 
 }
 
-/* End of file Controllername.php */
