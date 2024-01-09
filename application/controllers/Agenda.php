@@ -11,7 +11,7 @@ class Agenda extends CI_Controller {
 	{
 		$data['title']		= 'Agenda';
 		$data['page']		= 'agenda/index';
-		$data['agenda']	= $this->jadwal->getData();
+		$data['agenda']	        = $this->jadwal->getData();
 		$this->load->view('front/layouts/main', $data);
 	}
 }
