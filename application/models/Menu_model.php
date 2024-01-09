@@ -6,7 +6,7 @@ class Menu_model extends CI_Model {
 	public function getMenu()
 	{
 		if($this->session->userdata('id') != 1) {
-			return $this->db->where('is_active', 'Y')->where('user_id', '2')->get('menus')->result();
+			return $this->db->where('is_active', 'Y')->where('user_id', '2')->get('menus')->result():
 		}else{
 			return $this->db->where('is_active', 'Y')->get('menus')->result();
 		}
@@ -21,7 +21,6 @@ class Menu_model extends CI_Model {
 		$this->db->where('submenus.is_active', 'Y');
 		return $this->db->get()->result();
 	}
-
 }
 
 /* End of file ModelName.php */
